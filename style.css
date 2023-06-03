@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(4, 4, 24);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 0 5px;
+    color: white;
+    border-radius: 6px;
+}
+.nav-bar ul li a:hover {
+    color: white;
+    background: rgb(49, 49, 202);
+}
+.wrap {
+ padding: 5% 10%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ background-image: url(image/alejandro-luengo-clllGLYtLRA-unsplash.jpg);
+ background-size: cover;
+ background-position: fixed;
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 100vh;
+}
+.wrapper-section {
+    flex: 50%;
+}
+.wrapper {
+    box-sizing: border-box;
+    background-color: rgb(14, 14, 36);
+    height: 600px;
+    width: 500px;
+    padding: 25px 25px;
+    margin: 0 auto 0;
+}
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+}
+.form .input-box label {
+    color: white;
+    padding-bottom: 10px;
+}
+.button {
+    flex: 50%;
+}
+.button h1 {
+    margin: 0 auto 0;
+    padding: 7px 10px;
+    color: white;
+    border-radius: 6px;
+    background-color: rgb(18, 18, 43);
+    transition: 1.4s ease;
+    width: 225px;
+}
+.button:hover {
+    transform: scale(.8);
+}
+.title h1{
+    text-align: center;
+    font-size: 75px;
+    font-weight: 1000;
+    color: rgb(228, 15, 15);
+    padding-top: 3%;
+}
+.partners-container{
+    padding: 3% 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.card-section{
+    height: 280px;
+    width: 200px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 12px 12px 0 0;
+}
+.card-section h4{
+    text-align: center;
+    padding: 10% 0;
+    background-color: rgb(50, 13, 136);
+    border-radius: 0 0 12px 12px;
+}
+.reviews-section {
+    padding: 20px 10px;
+    background: linear-gradient(to bottom,#3498db,#006cd8);
+    height: auto;
+}
+.review-header {
+    text-align: center;
+    padding: 50px 0;
+}
+.review-header h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+.reviews-img {
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid white;
+}
+.reviews-card-container {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.reviews-card {
+    margin: 50px 0;
+    padding: 0 20px;
+    width: 25%;
+    text-align: center;
+}
+.reviews-card-container h3 {
+    margin: 10px 0;
+    color: white;
+    padding: 0 0 5px;
+    border-bottom: 1px solid white;
+}
+.reviews-card-container p {
+    color: white;
+}
+.reviews-title {
+    text-align: center;
+    background-color: red;
+    padding: 30px 10px;
+    margin-bottom: 0;
+}
+.reviews-title h1{
+    color: white;
+    font-weight: bolder;
+}
+.img-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.img-slider .slide img {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+.img-slider .slide .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: azure;
+}
+.img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-slider .navigation .btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* responsive */
+@media only screen and (max-width: 1860) {
+    .partners-container {
+        flex: 16.6%;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    header {
+        padding: 0 75px;
+    }
+    section {
+        padding: 0 100px;
+    }
+}
+@media only screen and (max-width: 1190px) {
+    header {
+        padding: 0 50px;
+    }
+    section {
+        padding: 0 70px;
+    }
+    .partners-section {
+        padding: 0 10px;
+    }
+    .title h1 {
+        font-size: 50px;
+    }   
+}
+@media only screen and (max-width: 960px) {
+    .nav-bar {
+        display: none;
+    }
+    .button, .wrapper-section {
+        flex: 100%;
+    }
+    .partners-section {
+        padding: 0 10px;
+    }
+    .title h1 {
+        font-size: 40px;
+    } 
+}
+@media only screen and (max-width: 930px) {
+    .partners-section {
+        padding: 0 70px
+    }
+}
+@media only screen and (max-width: 585px) {
+    .title h1 {
+        font-size: 25px;
+    } 
+}
+@media only screen and (max-width: 425px) {
+    header {
+        padding: 0 20px;
+    }
+    .logo {
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+    }
+    .wrap {
+        padding: 0 0;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    .wrapper {
+        width: 300px;
+        box-shadow: none;
+        margin: 10px auto 0;
+    }
+    .button h1{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .partners-container {
+        flex: 50%;
+    }
+    .partners-section {
+        padding: 0 10px
+    }
+    .card-section{
+        height: 100px;
+        width: 130px;
+    }
+    img {
+        height: 100px;
+        width: 130px;
+    }
+    .partners-container {
+        height: 70vh;
+    }
+    .title h1 {
+        font-size: 35px;
+    } 
+    .review-header h1 {
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+    }
+    .reviews-card {
+        flex: 100%;
+        padding: 0 5px;
+    }
+    .reviews-card-container {
+        padding: 0 0;
+    }
+    .reviews-title h1{
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .reviews-img {
+        height: 170px;
+        width: 170px;
+    }
+}
+
